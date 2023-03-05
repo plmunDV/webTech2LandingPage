@@ -1,0 +1,7 @@
+/* THIS IS FOR LAPTOP/ LARGE SCREEN */
+@media only screen and (min-width: 992px) {
+    .active{
+        font-weight: bold !important;
+        color: black !important;
+    }
+}

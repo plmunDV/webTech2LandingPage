@@ -6,24 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebTech2 | Library</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="css/bootswatchTheme.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
-    <style>
+    <!-- <style>
         .containers {
           width: 100%; /* or whatever width you want */
           height: 400px; /* or whatever height you want */
           overflow: hidden; /* to prevent the image from overflowing outside of the container */
         }
-
-        .container img {
+        
+        .containers img {
           max-width: 100%;
           height: auto;
           object-fit: cover; /* stretches the image to fill the container while preserving aspect ratio */
           object-position: center;
         }
-    </style>
-</head>
+    </style> -->
+</head> 
 <body>
     <!-- MODAL -->
     <div class="modal fade" id="signupModalToggle" aria-hidden="true" aria-labelledby="singupModalToggleLabel" tabindex="-1">
@@ -102,24 +104,37 @@
     <!-- END MODAL -->
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow p-3 mb-5 bg-body-tertiary rounded">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold fs-4" href="#">VINCE</a>
+    <nav class="navbar navbar-expand-lg bg-light bg-body-tertiary shadow  bg-body-tertiary rounded fixed-top"   >
+        <div class="container-lg">
+            <a class="navbar-brand fw-bold " href="#"><span class="text-primary">VIN</span><span class="text-danger">CE</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse  justify-content-end text-muted" id="navbarNav">
-                <a class="nav-link active mb-sm-2 mb-lg-0 me-lg-5" href="#">Home</a>
-                <a class="nav-link mb-sm-2 mb-lg-0 me-lg-5" href="#">About</a>
-                <a class="nav-link mb-sm-2 mb-lg-0 me-lg-5" href="#">Contact</a>
-                <button class="btn  btn-danger" type="button" data-bs-target="#signupModalToggle" data-bs-toggle="modal">
-                    Get Started
-                </button>
-                <!--<div class=" d-flex flex-md-grow-1 justify-content-lg-end">
-                    <button class="btn  btn-danger rounded-pill">
+            <div class="ul collapse navbar-collapse  justify-content-end text-muted" id="navbarNav">
+                <!-- <ul class="navbar-nav align-items-lg-center me-sm-auto me-lg-0 mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                      <a class="nav-link" aria-current="page" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#About">About</a>
+                    </li>
+                    <li class="nav-item pe-2">
+                      <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                    <li class="nav-item ">
+                        <button class="btn  btn-sm btn-danger" type="button" data-bs-target="#signupModalToggle" data-bs-toggle="modal">
+                            Get Started
+                        </button>
+                    </li>
+                  </ul> -->
+                <ul class="navbar-nav align-items-lg-center me-sm-auto me-lg-0 mb-2 mb-lg-0">
+                    <a class="nav-link active mb-sm-2 mb-lg-0 me-lg-5" href="#Home">Home</a>
+                    <a class="nav-link mb-sm-2 mb-lg-0 me-lg-5" href="#About">About</a>
+                    <a class="nav-link mb-sm-2 mb-lg-0 me-lg-5" href="#Contact">Contact</a>
+                    <button class="btn  btn-sm btn-danger" type="button" data-bs-target="#signupModalToggle" data-bs-toggle="modal">
                         Get Started
                     </button>
-                </div>-->
+                </ul>
             </div>
 
         </div>
@@ -127,40 +142,162 @@
     <!-- END NAV -->
 
     <!-- HOME -->
-    <div class="container">
-        <div class="row  align-items-center  ">
-            <div class="col-md-12  bg-light shadow p-3 bg-body-tertiary d-flex align-items-center bg-danger ">
-                <div class="row d-flex align-items-center">
-                    <div class="col-md-6">
-                        <p class="h1 fw-bold text-center">
-                            LIBRARY
-                            
-                            MANAGEMENT
-                        </p>
-                        <p class="text-muted fs-5" style="text-align:justify">
-                            The library management system allows librarians to track the availability of books, manage borrowing and return of books, and keep track of fines and fees associated with late returns. And it is designed to be user-friendly and efficient, allowing librarians to perform their duties quickly and easily.
-                        </p>
-                        <div class="d-flex justify-content-sm-center justify-content-lg-end" >
-                            <a href="#" class="btn btn-danger mt-2">Learn More</a>
-                        </div>
+    <section class="home py-5 " id="Home">
+        <div class="container-lg">
+            <div class="row min-vh-100 ">
+                <div class="col-12 bg-light my-5 shadow  bg-body-tertiary rounded d-flex align-items-center">
+                    <div class="row px-3">
+                        <div class="col-md-6 py-sm-5 py-md-0">
+                    <p class="h1 fw-bold text-center">
+                                LIBRARY
+                                
+                                MANAGEMENT
+                            </p>
+                            <p class=" fs-5" style="text-align:justify">
+                                The library management system allows librarians to track the availability of books, manage borrowing and return of books, and keep track of fines and fees associated with late returns. And it is designed to be user-friendly and efficient, allowing librarians to perform their duties quickly and easily.
+                            </p>
+                            <div class="d-flex justify-content-sm-center justify-content-lg-end" >
+                                <a href="#About" class="btn btn-danger mt-2">Learn More</a>
+                            </div>
+                </div>
+                <div class="col-md-6 order-sm-first">
+                    <div class="containers d-flex align-items-center">
+                        <img src="img/lib.jpg" class="img-fluid mt-sm-3 mt-lg-0 " />
                     </div>
-                    <div class="col-md-6 order-sm-first ">
-                        <div class="containers d-flex align-items-center">
-                            <img src="img/lib.jpg" />
-                        </div>
+                </div>
                     </div>
                 </div>
             </div>
-            
         </div>
-    </div>
+    </section>
     <!-- END HOME -->
 
+    <div class="container-fluid">
+        <hr class="border border-white border-2 opacity-75" />
+    </div>
+    
+    <!-- ABOUT -->
+    <section class="about py-5 min-vh-100" id="About">
+        <div class="container-lg py-4 ">
+            <div class="col-12 bg-light my-5 shadow  bg-body-tertiary rounded d-flex align-items-center">
+                <div class="row pt-5 px-3">
+                    <div class="col-md-4">
+                        <img src="img/about.webp" class="img-fluid" alt="about">
+                    </div>            
+                    <div class="col-md-8">
+                        <p class="h1 fw-bold text-center">ABOUT US</p>
+                        <p class=" fs-5" style="text-align:justify">Library Manangement was developed by Vince C. Doroja that currently 3rd year student in Pamantasan ng Lungson ng Muntinlupa. The programmer are committed to provide staff with the tools they need to provide high-quality service to their students and manage the books effectively.</p>
+                        <p class="h3 fw-bold text-center">Features:</p>
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                          Catalog
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body" style="text-align: justify;">
+                                            Our system allows librarians to catalog and organize materials quickly and easily, making it easy for patrons to find what they're looking for.
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-4">
+                                <div class="accordion accordion-flush" id="accordionFlushExample1">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                          Circulation
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample1">
+                                        <div class="accordion-body" style="text-align: justify;">
+                                            Our system streamlines the circulation process, making it easy for librarians to check books in and out and manage borrowing and returns.
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-4">
+                                <div class="accordion accordion-flush" id="accordionFlushExample2">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                          Reporting
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample2">
+                                        <div class="accordion-body" style="text-align: justify;">
+                                            Our system provides comprehensive reporting and analytics, giving librarians the data they need to make informed decisions about collection development and resource allocation.
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+        </div>
+      </section>
+      <!-- END -->
+
+        <div class="container-fluid">
+          <hr class="border border-white border-2 opacity-75" />
+        </div>
+        
+    <!-- CONTACT -->
+    <section class="home py-5 " id="Contact">
+        <div class="container-lg">
+            <div class="row min-vh-100 ">
+                <div class="col-12 bg-light my-5 shadow  bg-body-tertiary rounded d-flex align-items-center">
+                    <div class="row px-3">
+                        <div class="col-md-6 ">
+                        <h1 class="fw-bold text-center">HAVE SOME QUESTIONS?</h1>
+                        <div class="d-flex justify-content-center">
+                            <i class="bi bi-envelope-paper" style="font-size: 200px; text-align: center;"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="h1 fw-bold text-center">Send us a message<i class="bi bi-rocket-takeoff"></i></p>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="lname" placeholder="name" autocomplete="off">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="fname" placeholder="name" autocomplete="off">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com" autocomplete="off">
+                            <label for="floatingInputDisabled">Email address</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Your questions..." id="question" style="height: 100px" ></textarea>
+                            <label for="question">Your questions...</label>
+                          </div>
+                          <div class="d-grid gap-2">
+                            <button class="btn btn-primary text-uppercase" type="button">send message</button>
+                          </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END -->
+    
     <!-- FOOTER -->
     <footer class="page-footer font-small blue border-1 border-start-0 border-end-0 border-bottom-0">
 
         <div class="footer-copyright text-center py-2">
-            <hr class="border border-secondary border-2 opacity-75" />
+            <hr class="border border-white border-2 opacity-75" />
             <div class="">
                 <h2 class="h2 fw-bold mb-0"><span class="text-primary">VIN</span><span class="text-danger">CE</span></h2>
             </div>
@@ -179,6 +316,17 @@
         </div>
 
     </footer>
+    <!-- END -->
+
+    <!-- SCRIPTS -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+
+    <script>
+        $(document).on('click', 'ul a', function(){
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+    </script>
 </body>
 </html>
